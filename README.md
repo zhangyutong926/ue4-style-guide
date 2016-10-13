@@ -1,61 +1,60 @@
-# [Gamemakin](https://gamemak.in) UE4 Style Guide() {
+# [Gamemakin](https://gamemak.in) UE4 风格指南() {
 
-*A mostly reasonable approach to Unreal Engine 4*
+*使用虚幻引擎4最合理的方式*
 
-Heavily inspired by the [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript).
+受到了 [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript) 的大量启发。
 
 [![Analytics](https://ga-beacon.appspot.com/UA-80567399-1/repo?useReferrer)](#) ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
 
 
-## Linking To This Document
+## 使用这个文档的链接
 
-Every section of this style guide is numbered for both easy reference and easy linking. You can link to any section directly by simply append a hash tag and the section number to the end of http://ue4.style
-For example, if you want to send someone to the first principle of this style guide you would append `#0.1`, resulting in http://ue4.style#0.1.
+这个风格指南的每个部分都被标号，这样同时方便了引用者何链接者。你可以把任意章节进行链接，只需在http://ue4.style之后简单地添加一个hash标签和和章节标号即可。举个例子，如果你想要给某人发送本风格指南的第一准则，你可以附加 `#0.1`，连起来就是http://ue4.style#0.1。
 
-## Important Terminology
+## 重要的术语
 
 <a name="terms-level-map"></a>
-##### Levels/Maps
+##### 关卡/地图
 
-The word 'map' generally refers to what the average person calls a 'level' and may be used interchangeably. See this term's history [here](https://en.wikipedia.org/wiki/Level_(video_gaming)).
+单词“地图”（map）在一般情况下的意思是一部分人称之为“关卡”（level）的东西，并且可能被混用，在[这里](https://en.wikipedia.org/wiki/Level_(video_gaming))查看这个术语的历史。
 
 <a name="terms-cases"></a>
-##### Cases
+##### 特例
 
-There are a few different ways you can name things. Here are some common casing types:
+你可以用很多方法进行命名。这里有一些常见规则：
 
-> ###### PascalCase
+> ###### Pascal命名规则
 >
-> Capitalize every word and remove all spaces, e.g. `DesertEagle`, `StyleGuide`, `ASeriesOfWords`.
+> 大写每一个单词并移除所有空格，例如`DesertEagle`，`StyleGuide`,，`ASeriesOfWords`。
 > 
-> ###### camelCase
+> ###### camel命名规则
 >
-> The first letter is always lowercase but every following word starts with uppercase, e.g. `desertEagle`, `styleGuide`, `aSeriesOfWords`.
+>首字母通常是小写的，但是接下来的每个单词以大写字母开头，例如`desertEagle`,，`styleGuide`,，`aSeriesOfWords`。
 >
-> ###### Snake_case
+> ######”蛇“命名规则（ Snake_case）
 >
-> Words can arbitrarily start upper or lowercase but words are separated by an underscore, e.g. `desert_Eagle`, `Style_Guide`, `a_Series_of_Words`.
+> 单词可以随意地以大写或小写开头，但是单词是以下划线分割开的，例如`desert_Eagle`， `Style_Guide`， `a_Series_of_Words`。
 
 
 <a name="0"></a>
-## 0. Principles
+## 0. 原则
 
-These principles have been adapted from [idomatic.js style guide](https://github.com/rwaldron/idiomatic.js/).
+这些规则从[idomatic.js风格指南](https://github.com/rwaldron/idiomatic.js/)经修改而来。
 
 <a name="0.1"></a>
-### 0.1 If your UE4 project already has a style guide, you should follow it.
+### 0.1 如果你的UE4项目已经有了一个风格规范，你应该遵守它。
 
-If you are working on a project or with a team that has a pre-existing style guide, it should be respected.  Any inconsistency between and existing style guide and this guide should defer to the existing.
+如果你正在开发一个项目或和一个已经拥有风格指南的团队进行工作，你应该尊重它。所有已存在的风格指南与这个指南的不一致将会导致延迟。
 
-Style guides should be living documents however and you should propose style guide changes to an existing style guide as well as this guide if you feel the change benefits all usages.
+风格指南应该是活动文件，并且你应该对一个已经存在的风格指南提出关于修改的建议，包括这个指南，如果你觉得修改可以使所有使用方式受益。
 
-> #### "Arguments over style are pointless. There should be a style guide, and you should follow it."
+> #### “关于风格的争吵是无意义的。应该有一个风格指南，同时你应该遵守它。”
 > [_Rebecca Murphey_](https://rmurphey.com)
 
 <a name="0.2"></a>
-### 0.2 All structure, assets, and code in any Unreal Engine 4 project should look like a single person created it, no matter how many people contributed.
+### 0.2 任何虚幻引擎4项目的所有架构、资源和代码应该看起来就像是一个人创建的，不论有多少人曾经进行过贡献。
 
-Moving from one project to another should not cause a re-learning of style and structure. Conforming to a style guide removes unneeded guesswork and ambiguities.
+从一个项目迁移到另一个项目不应该需要对风格和架构进行重新学习。遵守一个风格指南可以移除不变要的猜测和歧义。
 
 It also allows for more productive creation and maintenance as one does not need to think about style, simply follow instructions. This style guide is written with best practices in mind, meaning that by following this style guide you will also minimize hard to track issues.
 
